@@ -55,7 +55,7 @@ runs: # Required
         git add .
         # check if generate new markdown files
         if test -z "$(git diff --cached)"; then
-          echo "[INFO] No issues whose labels include \"blog\" and \"need_published\"."
+          echo "[INFO] No issues whose labels include \"done\" and \"ready\"."
           echo "::set-output name=isNeedPR::N"
         else
           echo "::set-output name=isNeedPR::Y"
